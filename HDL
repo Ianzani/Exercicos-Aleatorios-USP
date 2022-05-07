@@ -1,0 +1,8 @@
+package point_fix is
+    constant MAX_IND : integer := 15;
+    constant MIN_IND : integer := -15;
+
+    subtype fixed_range is integer range MIN_IND to MAX_IND;
+
+    type fixed is array (fixed_range range <>) of bit;
+end point_fix;
